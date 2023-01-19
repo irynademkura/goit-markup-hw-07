@@ -69,8 +69,6 @@ img {
   margin: 0 auto;
 }
 
-
-
 /* @media screen and (min-width: 428px) {
   .container {
     width: 428px;
@@ -132,7 +130,6 @@ img {
 }
 
 .header-logo {
-
   color: var(--title-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -347,7 +344,6 @@ img {
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 112px;
@@ -357,9 +353,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../img/hero-bg-tablet.jpg);
-      
   }
-  
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -460,7 +454,6 @@ img {
   margin-right: 16px; */
 }
 
-
 @media screen and (min-width: 768px) {
   .feature {
     padding-bottom: 96px;
@@ -481,8 +474,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .feature .container {
-  margin-left: 16px;
-  margin-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -580,7 +573,6 @@ img {
 .feature-list .item:last-child {
   margin-right: 0px;
 }
-
 
 /* ____ABOUT US____ */
 
@@ -785,7 +777,6 @@ img {
     column-gap: 24px;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   .customer-icon {
@@ -1434,7 +1425,6 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .modal-agree-link:hover,
 .modal-agree-link:focus {
   color: var(--pressed-state-color);
@@ -1519,7 +1509,6 @@ img {
 
 .mobile-nav .link.current {
   color: var(--pressed-state-color);
-  
 }
 
 @media (min-width: 768px) {
@@ -1619,9 +1608,9 @@ img {
 
 .mobile-contacts .link.current {
   font-weight: 600;
-font-size: 36px;
-line-height: 40px;
-color: var(--pressed-state-color);
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--pressed-state-color);
 }
 
 /* .mobile-contacts .link:hover,
