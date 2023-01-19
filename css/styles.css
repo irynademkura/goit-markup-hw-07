@@ -289,8 +289,20 @@ img {
   margin-left: auto;
 }
 
+@media screen and (max-width:1199px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
 .contacts .item + .item {
   margin-left: 40px;
+}
+
+@media screen and (max-width:1199px) {
+  .contacts .item + .item {
+    margin-left: 0;
+  }
 }
 
 .contacts .link {
@@ -377,7 +389,7 @@ img {
   font-size: 36px;
   line-height: 1.11;
   color: var(--primary-white-color);
-  max-width: 318px;
+  /* max-width: 318px; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -385,7 +397,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero .title {
-    max-width: 510px;
+    max-width: 520px;
     margin-bottom: 40px;
     font-size: 56px;
     line-height: 1.07;
@@ -626,7 +638,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 64px;
-    /* column-gap: 24px; */
+    column-gap: 24px;
   }
 }
 
@@ -651,7 +663,6 @@ img {
 }
 
 .team-list .item {
-  margin-right: 24px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -748,9 +759,6 @@ img {
   }
 }
 
-.customer-list:last-child {
-  margin-right: 0px;
-}
 
 @media screen and (max-width: 767px) {
   .customer-icon {
@@ -1004,6 +1012,15 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-logo,
+  .footer-title,
+  .subscribe {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .footer-wrap {
   color: var(--primary-brand-color);
 }
@@ -1092,11 +1109,11 @@ img {
   height: 24px;
 }
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: 80px;
   }
-}
+} */
 
 
 .subscribe-title {
@@ -1112,19 +1129,21 @@ img {
 .subscribe-form {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 24px;
+  row-gap: 24px;
   flex-direction: column;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-subscribe {
-    align-items: flex-start;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-form {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-subscribe {
+    align-items: flex-start;
   }
 }
 
@@ -1165,13 +1184,13 @@ img {
 @media screen and (min-width: 768px) {
   .subscribe-input {
     width: 264px;
-    height: 40px;
     margin-bottom: 0;
-    margin-right: 24px;
   }
 }
 
 .subscribe-button {
+  width: 165px;
+  height: 40px;
   display: flex;
   padding-left: 24px;
   padding-top: 8px;
@@ -1189,6 +1208,7 @@ img {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .subscribe-button:hover,
 .subscribe-button:focus {
